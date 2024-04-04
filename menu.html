@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Datos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .col-left, .col-right {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 4px solid #007bff;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-pic:hover {
+            transform: rotate(360deg);
+        }
+
+        .links {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .links a {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .links a i {
+            margin-right: 5px;
+        }
+
+        .links a:hover {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        .col-right img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Estilos adicionales */
+        .section-header {
+            border-bottom: 1px solid #dee2e6;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .title-menu {
+            font-size: 2rem;
+            color: #8d50ff;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .title-umeca {
+            font-size: 2rem;
+            color: #28a745;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 768px) {
+            .row {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .col-left, .col-right {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row mb-4 section-header">
+            <div class="col-md-6">
+                <h2 class="title-menu">Menu</h2>
+            </div>
+            <div class="col-md-6 text-end">
+                <h2 class="title-umeca">UMECA</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-left">
+                <img src="https://via.placeholder.com/100" alt="Icono de Usuario" class="profile-pic">
+            </div>
+            <div class="col-6">
+                <div class="links">
+                    <a href="empleados.html"><i class="fas fa-users fa-lg"></i> Empleados</a>
+                    <a href="#"><i class="fas fa-balance-scale fa-lg"></i> Medidas Cautelares</a>
+                    <a href="#"><i class="fas fa-file-archive fa-lg"></i> Sobreseguimiento</a>
+                    <a href="inputados.html"><i class="fas fa-users-cog fa-lg"></i> Personas en Procesos</a>
+                    <a href="reportes.html"><i class="fas fa-book fa-lg"></i> Bitácoras</a>
+                </div>
+            </div>
+            <div class="col-3 col-right">
+                <img src="https://via.placeholder.com/200" alt="Imagen Derecha">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
